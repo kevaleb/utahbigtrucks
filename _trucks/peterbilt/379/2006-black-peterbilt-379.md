@@ -18,9 +18,12 @@ Engine:
     description: blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah.
     image_path: /images/trucks/peterbilt/black-peterbilt.jpg
 Interior:
-  - name:
-    description:
-    image_path:
+  - name: Seats
+    description: blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah.
+    image_path: /siteicon.png
+  - name: asdfasdf
+    description: blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah.
+    image_path: /siteicon.png
 Exterior:
   - name:
     description:
