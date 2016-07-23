@@ -8,3 +8,19 @@ title: Home
 		<h1>your trusted source of used semi trucks for sale</h1>
 	</hgroup>
 </div>
+
+
+<div class="trucks">
+	<section>
+		<h2>Used Semi Trucks For Sale</h2>
+		<ul>
+			{% for truck in site.trucks %}
+			<li>
+				<a href="{{ truck.url }}">
+					<h3>{{ truck.title }}</h3>
+				</a>
+			</li>
+			{% endfor %}
+		</ul>
+	</section>
+</div>
