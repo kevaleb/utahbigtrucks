@@ -11,9 +11,12 @@ video: 'https://www.youtube.com/embed/-Cj7tgfE9yg'
 gallery:
   - image_path: /images/trucks/peterbilt/black-peterbilt.jpg
 Engine:
-  - name:
-    description:
-    image_path:
+  - name: Leaky Head gasket
+    description: Blah blahb lahb blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah.
+    image_path: /images/trucks/peterbilt/black-peterbilt.jpg
+  - name: Dented OIl Pan
+    description: blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah.
+    image_path: /images/trucks/peterbilt/black-peterbilt.jpg
 Interior:
   - name:
     description:
@@ -29,4 +32,4 @@ Tires:
 ---
 
 
-Blah blah blah blahblahbjasdf &nbsp;i n &nbsp;anwer sdmf &nbsp; &nbsp;iasd fm,sdf m e asdf sdf.
+Blah blah blah blahblahbjasdf  i n  anwer sdmf    iasd fm,sdf m e asdf sdf.
