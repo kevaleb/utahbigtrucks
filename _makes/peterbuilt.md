@@ -1,7 +1,9 @@
 ---
-layout:
+layout: default
 title: peterbuilt
-description:
+description: Peterbuilts are really nice trucks and stuff.
 logo_path:
 banner_path:
 ---
+
+
