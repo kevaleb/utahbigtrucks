@@ -1,6 +1,9 @@
 ---
-layout:
+layout: default
 title: peterbilt 379
-description:
-make:
+description: 'Replacing the "359" in 1987, it remained in production until March 2007 with the last 1,000 379s called the "Legacy Class 379"'
+make: peterbilt
 ---
+
+
+Replacing the "359" in 1987, it remained in production until March 2007 with the last 1,000 379s called the "Legacy Class 379"
