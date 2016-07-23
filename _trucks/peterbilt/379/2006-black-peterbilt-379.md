@@ -32,9 +32,9 @@ Exterior:
     description: blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah.
     image_path: /siteicon.png
 Tires:
-  - name:
-    description:
-    image_path:
+  - name: asdfasdf
+    description: blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah.
+    image_path: /siteicon.png
 ---
 
 
