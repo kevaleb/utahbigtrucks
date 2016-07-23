@@ -7,9 +7,9 @@ make: peterbilt
 model: peterbilts/peterbilt-379
 mileage: '200,000'
 sold: false
-video:
+video: 'https://www.youtube.com/embed/ViLJA8bPKPg'
 gallery:
-  - image_path:
+  - image_path: /images/trucks/july-2016/black-peterbilt.jpg
 ---
 
 
