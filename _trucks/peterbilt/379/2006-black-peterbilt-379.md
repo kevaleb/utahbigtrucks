@@ -25,9 +25,12 @@ Interior:
     description: blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah.
     image_path: /siteicon.png
 Exterior:
-  - name:
-    description:
-    image_path:
+  - name: asdfasdf
+    description: blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah.
+    image_path: /siteicon.png
+  - name: asdfasdfasdf
+    description: blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah.
+    image_path: /siteicon.png
 Tires:
   - name:
     description:
