@@ -9,7 +9,7 @@ mileage: '200,000'
 sold: false
 video:
 gallery:
-  - image_path:
+  - image_path: /images/trucks/peterbilt/black-peterbilt.jpg
 Engine:
   - name:
     description:
