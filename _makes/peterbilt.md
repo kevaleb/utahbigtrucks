@@ -1,9 +1,9 @@
 ---
 layout: default
-title: peterbuilt
+title: peterbilt
 description: Peterbilts are really nice trucks and stuff.
-logo_path:
-banner_path:
+logo_path: /images/makes/peterbilt/peterbilt-logo.png
+banner_path: /images/makes/peterbilt/peterbilt-hood.jpg
 ---
 
 
