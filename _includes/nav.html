@@ -1,0 +1,21 @@
+<nav>
+	<div class="menu-button">
+		<span class="one"></span>
+		<span class="two"></span>
+		<span class="three"></span>
+	</div>
+	<header>
+		<a href="/">
+			<img src="/images/logo.png" alt="" />
+			<!--Utah<div>Big Trucks</div>-->
+		</a>
+	</header>
+	<ul>
+		{% for item in site.main-pages %}
+		<a href="{{ item.url }}" {% if page.url contains item.navclass %}class="selected"{% endif %}>{{ item.navtitle }}</a>
+		{% endfor %}
+	</ul>
+	<footer>
+		<!--<p>Provided by: <img src="/images/logos/mimis-logo.jpg" alt="mimis dispatch" /></p>-->
+	</footer>
+</nav>
