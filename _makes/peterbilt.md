@@ -7,3 +7,4 @@ banner_path: /images/makes/peterbilt/peterbilt-hood.jpg
 ---
 
 
+Blah blah blah blah.
