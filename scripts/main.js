@@ -8,6 +8,19 @@ $(document).ready(function(){
 // By Chris Coyier & tweaked by Mathias Bynens
 
 $(function() {
+	
+	$(document).ready(function(){	
+		
+		// Open overlay
+		$(".overlay > .close-overlay").click(function(){
+		    $(".overlay").toggleClass("visible");
+		});
+		
+		// Close overlay
+		$("#open-overlay").click(function(){
+		    $(".overlay").toggleClass("visible");
+		});
+	});
 
 	// Find all YouTube videos
 	var $allVideos = $("iframe[src^='http://www.youtube.com']"),

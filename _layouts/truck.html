@@ -1,0 +1,174 @@
+---
+layout: default
+---
+
+<link rel="stylesheet" href="/css/flickity.css" media="screen">
+<script src="/scripts/flickity.js"></script>
+<div class="main-gallery gallery js-flickity">
+	{% for item in page.gallery %}
+	<div class="gallery-cell" style="background-image: url('{{ item.image_path }}');">
+		{% if forloop.first %}
+			<hgroup>
+				<h1>{{ page.year }} {{ page.make}} {{ page.model | remove:page.make | remove:'/' }}</h1>
+				<div class="video-controls" id="open-overlay">
+					<div class="video-play">
+						<i class="fa fa-play" aria-hidden="true"></i>
+						<span class="video-button-outline"></span>
+						<span class="video-cta">Watch Video</span>
+					</div>
+				</div>
+			</hgroup>
+		{% endif %}
+	</div>
+	{% endfor %}
+</div>
+
+{% for item in page.gallery %}
+	{% if forloop.first %}
+		{% capture primaryimagepath %}{{ item.image_path }}{% endcapture %}
+	{% endif %}
+{% endfor %}
+
+<!--<div class="banner" style="background-image: url('{{ primaryimagepath }}'); height: 84%;">
+	<hgroup>
+		<h1>{{ page.year }} {{ page.make}} {{ page.model | remove:page.make | remove:'/' }}</h1>
+		<div class="video-controls" id="open-overlay">
+			<div class="video-play">
+				<i class="fa fa-play" aria-hidden="true"></i>
+				<span class="video-button-outline"></span>
+				<span class="video-cta">Watch Video</span>
+			</div>
+		</div>
+	</hgroup>
+</div>-->
+
+
+
+<div class="overlay">
+	<span class="close-overlay" id="close-overlay">X</span>
+	<div class="video-wrapper">
+		<iframe id="video" width="560" height="315" src="{{ page.videolink }}?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+	</div>
+</div>
+
+
+
+{% for item in site.makes %}
+	{% if page.make == item.title %}
+		{% capture makelogo %}{{ item.logo_path }}{% endcapture %}
+	{% endif %}
+{% endfor %}
+<div class="make-logo">
+	<img src="{{ makelogo }}" alt="" />
+</div>
+
+<div>
+	<section class="mileage">
+		<p><i class="fa fa-tachometer" aria-hidden="true"></i> {{ page.mileage }} Miles</p>
+	</section>
+	<section>
+		<article>
+			<h2>About this truck</h2>
+			{{ content }}
+		</article>
+	</section>
+	<section class="breakdown">
+		<ul>
+			<h3>Engine</h3>
+			{% for item in page.engine %}
+			<li>
+				<a href="{{ item.image_path }}" class="strip" data-strip-group="breakdown" data-strip-caption="{{ item.description }}">
+					<img src="{{ item.image_path }}" alt="{{ item.name }}" />
+				</a>
+				<hgroup>
+					<h3>{{ item.name }}</h3>
+					<p>{{ item.description }}</p>
+				</hgroup>
+				
+			</li>
+			{% endfor %}
+			
+			
+			<h3>Interior</h3>
+			{% for item in page.interior %}
+			<li>
+				<a href="{{ item.image_path }}" class="strip" data-strip-group="breakdown" data-strip-caption="{{ item.description }}">
+					<img src="{{ item.image_path }}" alt="{{ item.name }}" />
+				</a>
+				<hgroup>
+					<h3>{{ item.name }}</h3>
+					<p>{{ item.description }}</p>
+				</hgroup>
+			</li>
+			{% endfor %}
+			
+			
+			<h3>Exterior</h3>
+			{% for item in page.exterior %}
+			<li>
+				<a href="{{ item.image_path }}" class="strip" data-strip-group="breakdown" data-strip-caption="{{ item.description }}">
+					<img src="{{ item.image_path }}" alt="{{ item.name }}" />
+				</a>
+				<hgroup>
+					<h3>{{ item.name }}</h3>
+					<p>{{ item.description }}</p>
+				</hgroup>
+			</li>
+			{% endfor %}
+			
+			
+			<h3>Tires</h3>
+			{% for item in page.tires %}
+			<li>
+				<a href="{{ item.image_path }}" class="strip" data-strip-group="breakdown" data-strip-caption="{{ item.description }}">
+					<img src="{{ item.image_path }}" alt="{{ item.name }}" />
+				</a>
+				<hgroup>
+					<h3>{{ item.name }}</h3>
+					<p>{{ item.description }}</p>
+				</hgroup>
+			</li>
+			{% endfor %}
+		</ul>
+	</section>
+</div>
+
+
+<script>
+	// https://developers.google.com/youtube/iframe_api_reference
+	
+	// global variable for the player
+	var player;
+	
+	// this function gets called when API is ready to use
+	function onYouTubePlayerAPIReady() {
+	  // create the global player from the specific iframe (#video)
+	  player = new YT.Player('video', {
+	    events: {
+	      // call this function when player is ready to use
+	      'onReady': onPlayerReady
+	    }
+	  });
+	}
+	
+	function onPlayerReady(event) {
+	  
+	  // bind events
+	  var playButton = document.getElementById("open-overlay");
+	  playButton.addEventListener("click", function() {
+	    player.playVideo();
+	  });
+	  
+	  var pauseButton = document.getElementById("close-overlay");
+	  pauseButton.addEventListener("click", function() {
+	    player.pauseVideo();
+	  });
+	  
+	}
+	
+	// Inject YouTube API script
+	var tag = document.createElement('script');
+	tag.src = "//www.youtube.com/player_api";
+	var firstScriptTag = document.getElementsByTagName('script')[0];
+	firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+</script>

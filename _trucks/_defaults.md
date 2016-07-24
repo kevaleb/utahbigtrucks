@@ -10,19 +10,19 @@ sold:
 video:
 gallery:
   - image_path:
-Engine:
+engine:
   - name:
     description:
     image_path:
-Interior:
+interior:
   - name:
     description:
     image_path:
-Exterior:
+exterior:
   - name:
     description:
     image_path:
-Tires:
+tires:
   - name:
     description:
     image_path:
