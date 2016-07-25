@@ -839,13 +839,19 @@ nav.open > .menu-button > span.three {
 	list-style: none;
 }
 .trucks > ul > li {
+	width: 50%;
+	max-width: 350;
 	box-shadow: 0 1px 3px rgba(0,0,0,.25);
+}
+.trucks > ul > li:nth-last-of-type(odd) {
+	margin-right: 10px;
 }
 .trucks > ul > li > a {
 	display: block;
 	position: relative;
 	padding: 200px 0 0 0; 
 	background-size: cover;
+	background-position: center;
 	text-decoration: none;
 }
 .trucks > ul > li > a > hgroup {
@@ -1161,6 +1167,12 @@ nav.open > .menu-button > span.three {
 }
 
 
+
+
+.trucks > ul > li {
+	max-width: 100%;
+	width: 100%;
+}
 
 
 
