@@ -10,3 +10,44 @@ title: Home
 </div>
 
 
+<div>
+	<section class="makes">
+		{% for make in site.makes %}
+			<a href="{{ make.url }}">
+				<img src="{{ make.logo_path }}" alt="" />
+			</a>
+		{% endfor %}
+	</section>
+</div>
+
+
+<div>
+	<section class="trucks">
+		<!--<h2>Used Semi Trucks For Sale</h2>-->
+		<ul>
+		{% for truck in site.trucks %}
+			{% for item in truck.gallery %}
+				{% if forloop.first %}
+					{% capture primaryimage %}{{ item.image_path }}{% endcapture %}
+				{% endif %}
+			{% endfor %}
+			
+			{% for item in site.makes %}
+				{% if truck.make == item.title %}
+					{% capture makelogo %}{{ item.logo_path }}{% endcapture %}
+				{% endif %}
+			{% endfor %}
+			
+			<li>
+				<a href="{{ truck.url }}" style="background-image: url('{{ primaryimage }}');">
+					<hgroup>
+						<h3>{{ truck.title }}</h3>
+						<h4><i class="fa fa-tachometer" aria-hidden="true"></i> {{ truck.mileage }} Miles</h4>
+						<img src="{{ makelogo }}" alt="" />
+					</hgroup>
+				</a>
+			</li>
+		{% endfor %}
+		</ul>
+	</section>
+</div>
