@@ -12,10 +12,18 @@
 	</header>
 	<ul>
 		{% for item in site.main-pages %}
-		<a href="{{ item.url }}" {% if page.url contains item.navclass %}class="selected"{% endif %}>{{ item.navtitle }}</a>
+		<li>
+			<a href="{{ item.url }}" {% if page.url contains item.navclass %}class="selected"{% endif %}>{{ item.navtitle }}</a>
+		</li>
+		{% endfor %}
+		------
+		{% for make in site.makes %}
+		<li>
+			<a href="{{ make.url }}">{{ make.title }}</a>
+		</li>
 		{% endfor %}
 	</ul>
-	<footer>
-		<!--<p>Provided by: <img src="/images/logos/mimis-logo.jpg" alt="mimis dispatch" /></p>-->
-	</footer>
+	<!--<footer>
+		<!--<p>Provided by: <img src="/images/logos/mimis-logo.jpg" alt="mimis dispatch" /></p>--*>
+	</footer>-->
 </nav>
