@@ -1,7 +1,9 @@
 ---
-layout:
+layout: default
 title: kenworth
-description:
-logo_path:
-banner_path:
+description: Kenworths are cool and stuff
+logo_path: /images/makes/kenworth/kenworth-logo.jpg
+banner_path: /images/makes/kenworth/kenworth-hood.jpg
 ---
+
+
