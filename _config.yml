@@ -6,3 +6,5 @@ collections:
     output: true
   makes:
     output: true
+  models:
+    output: true
