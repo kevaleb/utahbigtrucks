@@ -4,9 +4,3 @@ excerpt_separator: ///
 collections:
   main-pages:
     output: true
-  makes:
-    output: true
-  models:
-    output: true
-  trucks:
-    output: true
