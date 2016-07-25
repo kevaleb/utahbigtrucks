@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: make
 title: peterbilt
 description: Peterbilts are really nice trucks and stuff.
 logo_path: /images/makes/peterbilt/peterbilt-logo.png

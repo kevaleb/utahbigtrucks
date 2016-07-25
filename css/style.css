@@ -378,6 +378,9 @@ nav.open > .menu-button > span.three {
 /* @end */
 
 
+
+
+
 /* @group BANNER */
 .banner {
 	position: relative;
@@ -993,14 +996,18 @@ nav.open > .menu-button > span.three {
 /* @group Makes */
 
 .makes {
-	
+	text-align: center;
 }
 .makes > a {
 	display: inline-block;
-	width: 100px;
+	max-width: 175px;
+	max-height: 36px;
+	margin: 0 12px;
+	vertical-align: middle;
 }
 .makes > a > img {
-	width: 100%;
+	max-width: 100%;
+	max-height: 100%;
 }
 
 /* @end */

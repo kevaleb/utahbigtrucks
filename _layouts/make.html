@@ -1,31 +1,29 @@
 ---
 layout: default
-title: Home
 ---
-<div class="banner" style="background-image: url('/images/backgrounds/trucker-sunset.jpg');">
+
+<div class="banner" style="background-image: url('{{ page.banner_path }}'); height: 84%;">
 	<hgroup>
-		<img src="/images/logo.png" alt="" />
-		<h1>your trusted source of used semi trucks for sale</h1>
+		<img src="{{ page.logo_path }}" alt="" />
 	</hgroup>
 </div>
 
-
 <div>
-	<section class="makes">
-		{% for make in site.makes %}
-			<a href="{{ make.url }}">
-				<img src="{{ make.logo_path }}" alt="" />
-			</a>
-		{% endfor %}
-	</section>
-</div>
-
-
-<div style="background-color: #e5e5e5;">
+	<!--<section>
+		<h1>{{ page.title }}</h1>
+	</section>-->
+	<!--<section>
+	{% for model in site.models %}
+		{% if model.make == page.title %}
+		<a href="{{ model.url }}">{{ model.title }}</a>
+		{% endif %}
+	{% endfor %}
+	</section>-->
 	<section class="trucks">
 		<!--<h2>Used Semi Trucks For Sale</h2>-->
 		<ul>
 		{% for truck in site.trucks %}
+		{% if truck.make == page.title %}
 			{% for item in truck.gallery %}
 				{% if forloop.first %}
 					{% capture primaryimage %}{{ item.image_path }}{% endcapture %}
@@ -47,6 +45,9 @@ title: Home
 					</hgroup>
 				</a>
 			</li>
+		{% else %}
+			Sorry, we don't currently have any {{ page.title }}s for sale.
+		{% endif %}
 		{% endfor %}
 		</ul>
 	</section>
