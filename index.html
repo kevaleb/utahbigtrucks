@@ -11,6 +11,17 @@ title: Home
 
 
 <div>
+	<section class="makes">
+		{% for make in site.makes %}
+			<a href="{{ make.url }}">
+				<img src="{{ make.logo_path }}" alt="" />
+			</a>
+		{% endfor %}
+	</section>
+</div>
+
+
+<div>
 	<section class="trucks">
 		<h2>Used Semi Trucks For Sale</h2>
 		<ul>
@@ -27,8 +38,8 @@ title: Home
 				{% endif %}
 			{% endfor %}
 			
-			<li style="background-image: url('{{ primaryimage }}');">
-				<a href="{{ truck.url }}">
+			<li>
+				<a href="{{ truck.url }}" style="background-image: url('{{ primaryimage }}');">
 					<hgroup>
 						<h3>{{ truck.title }}</h3>
 						<h4><i class="fa fa-tachometer" aria-hidden="true"></i> {{ truck.mileage }} Miles</h4>

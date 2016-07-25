@@ -822,6 +822,11 @@ nav.open > .menu-button > span.three {
 }
 /* @end */
 
+
+
+
+
+
 /* @group Trucks */
 
 .trucks {
@@ -834,12 +839,13 @@ nav.open > .menu-button > span.three {
 	list-style: none;
 }
 .trucks > ul > li {
-	position: relative;
-	padding: 200px 0 0 0; 
-	background-size: cover;
 	box-shadow: 0 1px 3px rgba(0,0,0,.25);
 }
 .trucks > ul > li > a {
+	display: block;
+	position: relative;
+	padding: 200px 0 0 0; 
+	background-size: cover;
 	text-decoration: none;
 }
 .trucks > ul > li > a > hgroup {
@@ -973,6 +979,25 @@ nav.open > .menu-button > span.three {
 
 /* @end */
 
+
+
+
+
+
+/* @group Makes */
+
+.makes {
+	
+}
+.makes > a {
+	display: inline-block;
+	width: 100px;
+}
+.makes > a > img {
+	width: 100%;
+}
+
+/* @end */
 
 
 
