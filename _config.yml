@@ -7,6 +7,6 @@ collections:
   makes:
     output: true
   models:
-	output: true
+    output: true
   trucks:
-	output: true
+    output: true
