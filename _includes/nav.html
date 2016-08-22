@@ -11,6 +11,9 @@
 		</a>
 	</header>
 	<ul>
+		<li>
+			<a href="/">Home</a>
+		</li>
 		{% for item in site.main-pages %}
 		<li>
 			<a href="{{ item.url }}" {% if page.url contains item.navclass %}class="selected"{% endif %}>{{ item.navtitle }}</a>

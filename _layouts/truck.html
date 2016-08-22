@@ -8,8 +8,11 @@ layout: default
 	{% for item in page.gallery %}
 	<div class="gallery-cell" style="background-image: url('{{ item.image_path }}');">
 		{% if forloop.first %}
+		
 			<hgroup>
 				<h1>{{ page.year }} {{ page.make}} {{ page.model | remove:page.make | remove:'/' }}</h1>
+				
+				{% if page.video == true  %}
 				<div class="video-controls" id="open-overlay">
 					<div class="video-play">
 						<i class="fa fa-play" aria-hidden="true"></i>
@@ -17,6 +20,7 @@ layout: default
 						<span class="video-cta">Watch Video</span>
 					</div>
 				</div>
+				{% endif %}
 			</hgroup>
 		{% endif %}
 	</div>
@@ -68,7 +72,7 @@ layout: default
 	</section>
 	<section>
 		<article>
-			<h2>About this truck</h2>
+			<!--<h2>About this truck</h2>-->
 			{{ content }}
 		</article>
 	</section>

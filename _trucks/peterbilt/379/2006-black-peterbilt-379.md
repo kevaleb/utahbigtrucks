@@ -6,8 +6,9 @@ year: '2006'
 make: peterbilt
 model: peterbilt/379
 mileage: '200,000'
-sold: false
-video: true
+sold: true
+archived: true
+video: false
 videolink: 'https://www.youtube.com/embed/-Cj7tgfE9yg'
 gallery:
   - image_path: /images/trucks/peterbilt/379/black-peterbilt.jpg

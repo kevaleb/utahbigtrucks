@@ -6,8 +6,10 @@ year:
 make:
 model:
 mileage:
-sold:
-video:
+sold: false
+archived: false
+video: true
+videolink:
 gallery:
   - image_path:
 engine:

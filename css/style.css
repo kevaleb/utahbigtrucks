@@ -264,6 +264,7 @@ nav > ul > li > a {
 	font:200 18px/48px"Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	color: inherit;
 	letter-spacing: 1px;
+	text-transform: uppercase;
 }
 nav > ul > li.selected > a {
 	border: 1px solid #00e697;
@@ -829,6 +830,86 @@ nav.open > .menu-button > span.three {
 
 
 
+/* @group Article */
+article {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 36px 0;
+}
+
+
+article > hgroup {
+	margin: 72px 0 48px 0;
+	text-align: center;
+}
+article > h1 {
+	margin: 36px 0;
+}
+article > h2 {
+	margin: 36px 0;
+}
+article > p+h3  {
+	margin: 72px 0 0 0;
+}
+
+
+article > blockquote > p {
+	margin: 48px 0;
+	text-align: center;
+	font: 400 24px/36px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	letter-spacing: 1px;
+	color: #b23636;
+	color: #444;
+}
+/*article > blockquote > p:before,
+article > blockquote > p:after {
+	content: '"';
+}*/
+
+article p {
+	margin: 0 0 36px 0;
+	font-size: 20px;
+	overflow: hidden;
+	letter-spacing: 1px;
+}
+article p > img {
+	width: 100%;
+	/*margin: -36px 0 0 0;*/
+}
+article > h3+p {
+	margin: 0 0 36px 0;
+}
+article > p:first-of-type:first-letter { 
+	float: left; 
+	color: #b23636; 
+	font-size: 120px; 
+	line-height: 96px; 
+	vertical-align: top;
+	padding-top: 12px; 
+	padding-right: 24px; 
+	padding-left: 3px; 
+	font-family: Georgia; 
+}
+article > hr {
+	height: 48px;
+	border: none;
+	border-top: 1px dotted #ccc;
+}
+
+
+article > ul {
+	padding: 0 0 0 24px;
+}
+article > ul > li{
+	margin: 36px 0;
+	/*padding: 50px;*/
+	font-size: 20px;
+}
+/* @end */
+
+
+
+
 
 /* @group Trucks */
 
@@ -842,9 +923,11 @@ nav.open > .menu-button > span.three {
 	list-style: none;
 }
 .trucks > ul > li {
+	position: relative;
 	width: 50%;
 	max-width: 350;
 	box-shadow: 0 1px 3px rgba(0,0,0,.25);
+	overflow: hidden;
 }
 .trucks > ul > li:nth-last-of-type(odd) {
 	margin-right: 10px;
@@ -872,6 +955,23 @@ nav.open > .menu-button > span.three {
 	top: 12px;
 	right: 12px;
 	width: 72px;
+}
+
+.trucks > ul > li > a > hgroup > .sold {
+	position: absolute;
+	left: -20%;
+	top: 10%;
+	width: 250px;
+	padding: 6px 24px;
+	background: red;
+	border: 5px solid red;
+	box-shadow: 0 0 0px 1px #fff inset;
+	color: #fff;
+	transform: rotate(-45deg);
+	text-align: center;
+	font: 400 18px/30px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
 }
 /* @end */
 
