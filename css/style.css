@@ -191,6 +191,7 @@ nav {
 	border-right: 1px solid rgba(0,0,0,.05);
 	-webkit-transition: all .3s ease-in-out 0s;
 	        transition: all .3s ease-in-out 0s;
+	overflow-y: auto;
 }
 nav > .menu-button {
 	display: none;
