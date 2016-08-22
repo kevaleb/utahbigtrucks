@@ -920,17 +920,24 @@ article > ul > li{
 	
 }
 .trucks > ul {
+	overflow: hidden;
 	list-style: none;
+	text-align: center;
 }
 .trucks > ul > li {
+	/*float: left;*/
+	display: inline-block;
 	position: relative;
-	width: 50%;
+	width: 49%;
 	max-width: 350;
+	margin: 0 -.25em 0 0;
+	background: #000;
 	box-shadow: 0 1px 3px rgba(0,0,0,.25);
 	overflow: hidden;
+	text-align: left;
 }
 .trucks > ul > li:nth-last-of-type(odd) {
-	margin-right: 10px;
+	margin-left: 2%;
 }
 .trucks > ul > li > a {
 	display: block;
@@ -959,19 +966,24 @@ article > ul > li{
 
 .trucks > ul > li > a > hgroup > .sold {
 	position: absolute;
-	left: -20%;
-	top: 10%;
-	width: 250px;
+	left: 50%;
+	top: 72px;
+	width: 150px;
+	margin: 0 0 0 -75px;
 	padding: 6px 24px;
 	background: red;
 	border: 5px solid red;
-	box-shadow: 0 0 0px 1px #fff inset;
+	box-shadow: 0 0 0px 2px #fff inset;
 	color: #fff;
-	transform: rotate(-45deg);
+	transform: rotate(-25deg);
 	text-align: center;
-	font: 400 18px/30px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font: 500 24px/30px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	text-transform: uppercase;
-	letter-spacing: 2px;
+	letter-spacing: 6px;
+	
+	
+	
+	
 }
 /* @end */
 

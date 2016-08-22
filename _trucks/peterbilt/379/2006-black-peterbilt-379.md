@@ -3,7 +3,7 @@ layout: truck
 title: 2006 black peterbilt 379
 description:
 year: '2006'
-make: peterbilt
+make: kenworth
 model: peterbilt/379
 mileage: '200,000'
 sold: true
@@ -41,8 +41,9 @@ tires:
     image_path: /siteicon.png
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit finibus sem, sed finibus erat placerat et. Nunc nibh lectus, interdum id laoreet non, iaculis vel est. Suspendisse bibendum rutrum odio sit amet pretium. Fusce volutpat non velit in ullamcorper. 
 
-Vestibulum vitae cursus justo. Duis bibendum, velit eu finibus pharetra, elit libero hendrerit nulla, nec viverra odio felis nec magna. Curabitur suscipit eget purus quis cursus. 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit finibus sem, sed finibus erat placerat et. Nunc nibh lectus, interdum id laoreet non, iaculis vel est. Suspendisse bibendum rutrum odio sit amet pretium. Fusce volutpat non velit in ullamcorper.
+
+Vestibulum vitae cursus justo. Duis bibendum, velit eu finibus pharetra, elit libero hendrerit nulla, nec viverra odio felis nec magna. Curabitur suscipit eget purus quis cursus.
 
 Nulla porttitor pretium sagittis. Donec velit magna, finibus et aliquet id, maximus ac turpis. Mauris id felis et mauris vulputate suscipit vel sed nunc. Vestibulum ornare elit placerat felis congue mattis. Donec a lacinia enim, nec pharetra arcu. Integer euismod facilisis dui quis aliquet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;

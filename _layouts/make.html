@@ -42,11 +42,12 @@ layout: default
 						<h3>{{ truck.title }}</h3>
 						<h4><i class="fa fa-tachometer" aria-hidden="true"></i> {{ truck.mileage }} Miles</h4>
 						<img src="{{ makelogo }}" alt="" />
+						{% if truck.sold == true %}
+						<span class="sold">Sold</span>
+						{% endif %}
 					</hgroup>
 				</a>
 			</li>
-		{% else %}
-			Sorry, we don't currently have any {{ page.title }}s for sale.
 		{% endif %}
 		{% endfor %}
 		</ul>
