@@ -4,7 +4,7 @@ layout: default
 
 <link rel="stylesheet" href="/css/flickity.css" media="screen">
 <script src="/scripts/flickity.js"></script>
-<div class="main-gallery gallery js-flickity">
+<div class="image-slider gallery js-flickity">
 	{% for item in page.gallery %}
 	<div class="gallery-cell" style="background-image: url('{{ item.image_path }}');">
 		{% if forloop.first %}
@@ -20,6 +20,10 @@ layout: default
 						<span class="video-cta">Watch Video</span>
 					</div>
 				</div>
+				{% endif %}
+				
+				{% if page.sold == true %}
+				<span class="sold">Sold</span>
 				{% endif %}
 			</hgroup>
 		{% endif %}
